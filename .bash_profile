@@ -17,3 +17,4 @@ export PS1="$purple\u$green\$(__git_ps1)$blue \W $ $reset"
 
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias tmux="TERM=screen-256color-bce tmux"
+alias lsfiles='for f in *; do [[ -f "$f" ]] && ls -- "$f"; done'
