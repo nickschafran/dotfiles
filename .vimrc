@@ -20,6 +20,9 @@ set tabstop=4
 set expandtab
 set autoindent
 
+" remove trailing whitespace before saving (restricted to specified filetypes)
+autocmd FileType c,java,python,javascript,json,rust autocmd BufWritePre <buffer> :%s/\s\+$//e
+
 "wildmenu
 set wildmenu
 set wildmode=longest:list,full
