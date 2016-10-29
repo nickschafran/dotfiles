@@ -2,6 +2,9 @@
 source ~/.git-completion.bash
 source ~/.profile
 
+# Set `ll` alias
+alias ll='ls -lG'
+
 # Set architecture flags
 export ARCHFLAGS="-arch x86_64"
 # Ensure user-installed binaries take precedence
@@ -40,3 +43,5 @@ export PATH="/usr/local/mysql/bin:$PATH"
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/work
 source /usr/local/bin/virtualenvwrapper.sh
+
+export HTTPLIB_CA_CERTS_PATH=/Users/nickschafran/work/cacerts.pem
