@@ -14,7 +14,7 @@ set history=500
 " syntax highlighting and colorscheme
 syntax on
 set background=dark
-colorscheme solarized
+colorscheme gruvbox
 
 " tabs and indent
 set softtabstop=4 shiftwidth=4 expandtab smarttab
@@ -37,8 +37,8 @@ filetype plugin indent on
 
 " highlight 80th column
 if (exists('+colorcolumn'))
-        set colorcolumn=80
-        endif
+    set colorcolumn=80
+endif
 
 " remap 0 to first non-blank character
 map 0 ^

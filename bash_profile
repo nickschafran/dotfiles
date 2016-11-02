@@ -1,12 +1,19 @@
+source ~/.work
+source /usr/local/bin/virtualenvwrapper.sh
 # Enable tab completion
 source ~/.git-completion.bash
 source ~/.profile
 
-# Set `ll` alias
+# aliases 
 alias ll='ls -lG'
+alias vlc='open -a vlc'
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+alias tmux="TERM=screen-256color-bce tmux"
+alias lsfiles='for f in *; do [[ -f "$f" ]] && ls -- "$f"; done'
 
 # Set architecture flags
 export ARCHFLAGS="-arch x86_64"
+
 # Ensure user-installed binaries take precedence
 export PATH=/usr/local/bin:$PATH
 
@@ -30,18 +37,9 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 # '\W' adds the name of the current directory
 export PS1="$namecol\u$repocol\$(__git_ps1)$dircol \W $ $reset"
 
-alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
-alias tmux="TERM=screen-256color-bce tmux"
-alias lsfiles='for f in *; do [[ -f "$f" ]] && ls -- "$f"; done'
-
-#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
+# iterm
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
+# Environment variables
 export PATH="/usr/local/mysql/bin:$PATH"
-
 export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/work
-source /usr/local/bin/virtualenvwrapper.sh
-
-export HTTPLIB_CA_CERTS_PATH=/Users/nickschafran/work/cacerts.pem
