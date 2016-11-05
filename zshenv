@@ -22,7 +22,7 @@ alias cppcompile='c++ -std=c++11 -stdlib=libc++'
 alias ll='ls -lG'
 alias vlc='open -a vlc'
 alias tmux="TERM=screen-256color-bce tmux"
-alias zshconfig="vim ~/.zshrc"
-alias envconfig="vim ~/Projects/config/env.sh"
+alias zshconfig="vim ~/.dotfiles/zshrc"
+alias envconfig="vim ~/.dotfiles/zshenv"
 
 eval "$(pyenv init -)"
