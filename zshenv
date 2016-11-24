@@ -3,7 +3,12 @@
 # PATH
 export PATH="/usr/local/share/python:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PYTHONPATH=$PYTHONPATH
+export PATH="/Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin:$PATH"
 
+# Homebrew
+export HOMEBREW_NO_ANALYTICS=1
+export HOMEBREW_NO_INSECURE_REDIRECT=1
+export HOMEBREW_CASK_OPTS=--require-sha.
 
 # Virtual Environment
 export WORKON_HOME=$HOME/.virtualenvs
@@ -20,8 +25,10 @@ function mkcd() { mkdir -p "$@" && cd "$_"; }
 # Aliases
 alias cppcompile='c++ -std=c++11 -stdlib=libc++'
 alias ll='ls -lG'
+alias firefox='open -a firefox'
 alias tmux="TERM=screen-256color-bce tmux"
 alias zshconfig="vim ~/.dotfiles/zshrc"
 alias envconfig="vim ~/.dotfiles/zshenv"
 
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
