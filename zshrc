@@ -52,6 +52,7 @@ ZSH_THEME="nick"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
+plugins=(zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -91,3 +92,4 @@ plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew
 source ~/.dotfiles/zshenv
 
 fpath=(/usr/local/share/zsh-completions $fpath)
+source /Users/nickschafran/.dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
