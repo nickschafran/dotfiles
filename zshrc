@@ -93,3 +93,11 @@ source ~/.dotfiles/zshenv
 
 fpath=(/usr/local/share/zsh-completions $fpath)
 source /Users/nickschafran/.dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/nickschafran/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/nickschafran/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/nickschafran/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/nickschafran/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+eval "$(chef shell-init zsh)"
+eval "$(chef shell-init zsh)"
