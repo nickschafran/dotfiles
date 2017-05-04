@@ -16,13 +16,14 @@ set history=500
 " syntax highlighting and colorscheme
 syntax on
 set background=dark
-colorscheme solarized
+colorscheme gruvbox 
 
 " tabs and indent
 set tabstop=4 shiftwidth=4 expandtab
 set backspace=2
 set nuw=5
 set relativenumber
+set number
 set ruler
 set autoindent
 set nowrap
@@ -55,5 +56,5 @@ autocmd FileType c,java,python,javascript,json,rust autocmd BufWritePre <buffer>
 " python:
 
 " pymode stuff
-let g:pymode = 0
+"let g:pymode = 0
 
