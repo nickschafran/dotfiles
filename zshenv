@@ -4,6 +4,7 @@
 export PATH="/usr/local/share/python:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PYTHONPATH=$PYTHONPATH
 export PATH="/Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin:$PATH"
+export work=~/Documents/03_work
 
 # Homebrew
 export HOMEBREW_NO_ANALYTICS=1
@@ -29,6 +30,12 @@ alias firefox='open -a firefox'
 alias tmux="TERM=screen-256color-bce tmux"
 alias zshconfig="vim ~/.dotfiles/zshrc"
 alias envconfig="vim ~/.dotfiles/zshenv"
+alias start="vim ~/.checklist"
 
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+pyclean () {
+        find . -type f -name "*.py[co]" -delete
+        find . -type d -name "__pycache__" -delete
+}
