@@ -16,7 +16,7 @@ set history=500
 " syntax highlighting and colorscheme
 syntax on
 set background=dark
-colorscheme gruvbox 
+colorscheme tomorrow-night
 
 " tabs and indent
 set tabstop=4 shiftwidth=4 expandtab
@@ -27,9 +27,6 @@ set number
 set ruler
 set autoindent
 set nowrap
-
-" mouse
-" set mouse=a
 
 " search
 set wildmenu
@@ -52,9 +49,4 @@ autocmd VimResized * :wincmd =
 
 " remove trailing whitespace before saving (restricted to specified filetypes)
 autocmd FileType c,java,python,javascript,json,rust autocmd BufWritePre <buffer> :%s/\s\+$//e
-
-" python:
-
-" pymode stuff
-"let g:pymode = 0
 

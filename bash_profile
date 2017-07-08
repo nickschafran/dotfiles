@@ -1,5 +1,5 @@
-source ~/.work
 source /usr/local/bin/virtualenvwrapper.sh
+
 # Enable tab completion
 source ~/.git-completion.bash
 source ~/.profile
