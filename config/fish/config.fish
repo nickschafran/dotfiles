@@ -18,6 +18,11 @@ function mkcd
   and cd $argv
 end
 
+function pyclean
+  find . -type f -name "*.py[co]" -delete
+  find . -type d -name "__pycache__" -delete
+end
+
 . ~/.config/fish/aliases.fish
 
 # # colors!
