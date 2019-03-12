@@ -1,14 +1,21 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " .vimrc
 " nickschafran
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " load sensible vim first, so that .vimrc overrides
 runtime! plugin/sensible.vim
 execute pathogen#infect()
 
+" general vim setup
 let mapleader = " "
-
-" Use vim settings, not vi settings
 set nocompatible
+set autoread
+set noerrorbells
+set foldcolumn=1
+set nobackup
+set nowb
+set noswapfile
 
 " remember more commands and search history
 set history=500
@@ -16,7 +23,8 @@ set history=500
 " syntax highlighting and colorscheme
 syntax on
 set background=dark
-colorscheme tomorrow-night
+colorscheme dracula
+
 
 " tabs and indent
 set tabstop=4 shiftwidth=4 expandtab
