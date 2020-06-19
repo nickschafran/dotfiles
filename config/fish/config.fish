@@ -1,8 +1,8 @@
 # pyenv
-status --is-interactive; and . (pyenv init -|psub)
+# status --is-interactive; and . (pyenv init-|psub)
+pyenv init - | source
 
 set -x EDITOR vim
-set work ~/Documents/03_work
 
 # Homebrew
 set HOMEBREW_NO_ANALYTICS 1
